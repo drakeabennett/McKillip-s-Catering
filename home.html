@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McKillips Catering</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar_container"> 
+                <a href="home.html" id="navbar_logo"><img src="images/mckillips-catering-logo.jpeg" alt="McKillip's Catering Compnay Logo"></a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="home.html" class="navbar_links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="menus.html" class="navbar_links" id="menus-page">Menus</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="rentals.html" class="navbar_links" id="rentals-page">Rentals</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="contact.html" class="navbar_button" id="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+    <main>
+        <section id="home">
+            <div class="home-container">
+
+                <div class="stars">
+                    <img src="images/star.svg" class="star star-1" alt="Star">
+                    <img src="images/star.svg" class="star star-2" alt="Star">
+                    <img src="images/star.svg" class="star star-3" alt="Star">
+                    <img src="images/star.svg" class="star star-4" alt="Star">
+                    <img src="images/star.svg" class="star star-5" alt="Star">
+                </div>
+
+                <h1 class="main-phrase"><span id="highlight">Premium</span> Catering.</h1>
+
+                <h2 class="home-text-1">Full-service catering for weddings, corporate events, and more.</h2>
+
+                <a href="contact.html" class="button" id="home-contact-button">Contact Us</a>
+
+                <div class="image-slider" style="
+                    --width: 300px;
+                    --height: 450px;
+                    --quantity: 8;
+                ">
+                    <div class="image-list">
+                        <div class="item" style="--position: 1"><img src="images/brisket.jpg" alt="Brisket"></div>
+                        <div class="item" style="--position: 2"><img src="images/green-beans.jpg" alt="Green Beans"></div>
+                        <div class="item" style="--position: 3"><img src="images/prime-rib.jpg" alt="Prime Rib"></div>
+                        <div class="item" style="--position: 4"><img src="images/fruit-tray.jpg" alt="Fruit Tray"></div>
+                        <div class="item" style="--position: 5"><img src="images/chicken.jpg" alt="Chicken"></div>
+                        <div class="item" style="--position: 6"><img src="images/veg-tray.jpg" alt="Vegtable Tray"></div>
+                        <div class="item" style="--position: 7"><img src="images/roasted-reds.jpg" alt="Roasted Red Potatoes"></div>
+                        <div class="item" style="--position: 8"><img src="images/mashed-and-mac.jpg" alt="Mashed Potatoes and Mac"></div>
+                    </div>
+                </div>
+
+                <h2 class="home-text-2">Freshly prepared meals, crafted onsite.</h2>
+
+                <a href="menus.html" class="button" id="home-menus-button">See menu</a>
+
+                <img src="images/tent.jpg" class="tent" alt="Tent">
+
+                <h2 class="home-text-4">Elevate your event with our rentals—tents, table settings, and catering essentials for a seamless experience.</h2>
+
+                <a href="rentals.html" class="button" id="home-rentals-button">See rentals</a>
+                
+                <h2 class="home-text-3">McKillips Catering is family-owned and operated.</h2>
+                
+            </div>
+        </section>
+    </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+    
+            <div class="footer-social">
+                <a href="https://www.facebook.com/McKillipsCatering" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: white;" alt="Facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/mckillipscatering" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: white;" alt="Instagram"></i>
+                </a>
+            </div>
+    
+            <p class="footer-copy">© 2024 McKillips Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
