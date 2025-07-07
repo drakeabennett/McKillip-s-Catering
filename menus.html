@@ -2,61 +2,777 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
     <title>McKillips Catering</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/images/star.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-
+    <div class="blur-overlay" id="blur-overlay"></div>
     <header>
         <nav class="navbar">
-            <div class="navbar_container"> 
-                <a href="home.html" id="navbar_logo"><img src="images/mckillips-catering-logo.jpeg" alt="McKillip's Catering Compnay Logo"></a>
-                <div class="navbar_toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+            <div class="navbar-container"> 
+                <a href="/home.html" id="navbar-logo">
+                    <img src="images/mckillips-catering-logo.png" alt="McKillip's Catering Company Logo">
+                </a>
+                <div class="navbar-toggle" id="mobile-menu">
+                    <span class="navbar-bar"></span>
+                    <span class="navbar-bar"></span>
+                    <span class="navbar-bar"></span>
                 </div>
-                <ul class="navbar_menu">
-                    <li class="navbar_item">
-                        <a href="home.html" class="navbar_links" id="home-page">Home</a>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="/home.html" class="navbar-link" id="home-page">
+                            <i class="fa-solid fa-house fa-sm"></i>
+                            Home
+                        </a>
                     </li>
-                    <li class="navbar_item">
-                        <a href="menus.html" class="navbar_links" id="menus-page">Menus</a>
+                    <li class="navbar-item">
+                        <a href="/menus.html" class="navbar-link" id="menus-page">
+                            <i class="fa-solid fa-list-ul fa-sm"></i>
+                            Menus
+                        </a>
                     </li>
-                    <li class="navbar_item">
-                        <a href="rentals.html" class="navbar_links" id="rentals-page">Rentals</a>
+                    <li class="navbar-item">
+                        <a href="/rentals.html" class="navbar-link" id="rentals-page">
+                            <i class="fa-solid fa-truck-ramp-box fa-sm"></i>
+                            Rentals
+                        </a>
                     </li>
-                    <li class="navbar_item">
-                        <a href="contact.html" class="button" id="contact">Contact</a>
+                    <li class="navbar-item">
+                        <a href="/about.html" class="navbar-link" id="about-page">
+                            <i class="fa-solid fa-info-circle fa-sm"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/contact.html" class="navbar-link" id="contact-page">
+                            <i class="fa-solid fa-address-card fa-sm"></i>
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
+    <div class="main-content">
     <main>
-        <div class="star-background">
-            
-        </div>    
+        <section id="menus">
+            <div class="menus-container">
+
+                <h1 class="menus-phrase fade-in-section">Curated Menu Options.</h1>
+
+                <h2 class="menus-text-1 fade-in-section">Explore our extensive menu options, designed to suit a variety of tastes and occasions.</h2>
+
+                <div class="break-line fade-in-section"></div>
+
+                <h2 class="menus-text-2 fade-in-section">Entrées</h2>
+
+                <div class="slider-wrapper fade-in-section">
+                <div class="swiper entrees-swiper"> 
+                    <div class="swiper-wrapper card-list">
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/brisket.jpg" alt="Brisket" class="card-image">
+                          <p class="badge">Brisket</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Tender and flavorful, our brisket is slow-cooked, ensuring a melt-in-your-mouth experience.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/tri-tip.jpg" alt="Tri-Tip" class="card-image">
+                          <p class="badge">Tri-Tip</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Juicy and tender, our tri-tip is grilled and seasoned to lock in bold, savory flavor.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/porkloin.jpg" alt="Porkloin" class="card-image">
+                          <p class="badge">Porkloin</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Barbecued and finished with a honey glaze, this porkloin delivers juicy, smoky flavor with a touch of sweetness.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/newyorksteak.jpg" alt="New York Steak" class="card-image">
+                          <p class="badge">New York Steak</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Classic and hearty, our New York steaks are seared to perfection.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/salmon.jpg" alt="Salmon" class="card-image">
+                          <p class="badge">Salmon</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Brushed with olive oil, lightly seasoned and cooked until tender.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/chickenthighs.jpg" alt="Chicken Thighs" class="card-image">
+                          <p class="badge">Chicken Thighs</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Marinated in rich barbecue sauce and barbecued to perfection, these chicken thighs are tender, smoky, and full of bold flavor.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/pulledpork.jpg" alt="Pulled Pork" class="card-image">
+                          <p class="badge">Pulled Pork</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Slow-cooked and hand-shredded, our pulled pork is rich and tender.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/hotdogsandpolishsausage.jpg" alt="Hot Dogs and Polish Sausage" class="card-image">
+                          <p class="badge">Hot Dogs &amp; Polish Sausage</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Grilled to a crisp finish, a fun and satisfying option for casual gatherings.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/chicken-quarters.jpg" alt="Chicken Quarters" class="card-image">
+                          <p class="badge">Chicken Quarters &amp; Pieces</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Seasoned with a signature spice blend and cooked over an open flame for deep, smoky flavor in every bite.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/burgers.jpg" alt="Burgers" class="card-image">
+                          <p class="badge">Burgers</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Flame-seared beef patties, cooked to perfection and served with a variety of toppings.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/countrystyleporkribs.jpg" alt="Country Style Pork Ribs" class="card-image">
+                          <p class="badge">Country Style Pork Ribs</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Grilled over an open flame for a smoky char, then generously coated in rich barbecue sauce for a bold, savory finish.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/prime-rib.jpg" alt="Prime Rib" class="card-image">
+                          <p class="badge">Prime Rib</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Slow-roasted and herb-crusted for rich flavor and juicy tenderness.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/chickenbreast.jpg" alt="Chicken Breast" class="card-image">
+                          <p class="badge">Chicken Breast</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Tender, perfectly seasoned, and grilled to a juicy finish for a flavorful, light option.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/parmesanchickenbreast.jpg" alt="Parmesan Chicken Breast" class="card-image">
+                          <p class="badge">Parmesan Chicken Breast</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Seasoned to perfection and topped with a smooth, zesty lemon butter sauce for a deliciously rich and tangy flavor.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/ham.jpg" alt="Smoked Ham" class="card-image">
+                          <p class="badge">Smoked Ham</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Barbecued for rich, applewood smoky flavor, this ham is tender, savory, and sliced fresh for serving.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/turkey.jpg" alt="Roasted Turkey" class="card-image">
+                          <p class="badge">Roasted Turkey</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Tender and juicy slices, oven-roasted to perfection and perfect with traditional sides.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Pork Carnitas</p>
+                          <p class="card-description">Slow-cooked pork, shredded and lightly crisped for bold flavor.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Garden Burgers</p>
+                          <p class="vegetarian">Vegetarian</p>
+                          <p class="card-description">A meatless option with a crisp outside and hearty veggie flavor.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Spinach Lasagna</p>
+                          <p class="vegetarian">Vegetarian</p>
+                          <p class="card-description">Layers of pasta, fresh spinach, and rich cheeses in a fully vegetarian bake.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Three Cheese Ravioli</p>
+                          <p class="vegetarian">Vegetarian</p>
+                          <p class="card-description">Tender ravioli stuffed with a creamy blend of cheeses and topped with marinara.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Penne Spaghetti</p>
+                          <p class="vegetarian">Vegetarian</p>
+                          <p class="card-description">Penne pasta tossed in a classic marinara sauce.</p>
+                        </a>
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="swiper-buttons">
+                        <div class="swiper-button-prev">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                    </div>
+                  
+                    <div class="swiper-pagination"></div>
+                </div>
+                </div>
+
+                <div class="break-line fade-in-section"></div>
+
+                <h2 class="menus-text-included fade-in-section">Entrées include one of these three available options:</h2>
+                <div class="included-cards fade-in-section">
+                    <div class="included-card">
+                        <p class="badge">Dinner Rolls</p>
+                        <p class="card-description">Soft and fluffy rolls served warm with butter.</p>
+                    </div>
+                    <div class="included-card">
+                        <p class="badge">Garlic Bread</p>
+                        <p class="card-description">Toasted french bread brushed with garlic butter.</p>
+                    </div>
+                    <div class="included-card">
+                        <p class="badge">Cornbread</p>
+                        <p class="card-description">Golden, moist cornbread with a hint of sweetness.</p>
+                    </div>
+              </div>
+
+                <div class="break-line fade-in-section"></div>
+
+                <h2 class="menus-text-3 fade-in-section">Sides</h2>
+
+                <div class="swiper sides-swiper fade-in-section">
+                    <div class="swiper-wrapper card-list">
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/green-beans.jpg" alt="Green Beans" class="card-image">
+                                <p class="badge">Green Beans</p>
+                                <p class="gluten-free">Gluten-Free</p>
+                                <p class="card-description">Simmered with bacon and onions for a savory, comforting side.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/mashedpotatoes.jpg" alt="Mashed Potatoes" class="card-image">
+                                <p class="badge">Mashed Potatoes</p>
+                                <p class="gluten-free">Gluten-Free</p>
+                                <p class="card-description">Creamy, buttery mashed potatoes with garlic and red skin texture.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/macandcheese.jpg" alt="Mac and Cheese" class="card-image">
+                                <p class="badge">Mac and Cheese</p>
+                                <p class="card-description">Creamy and cheesy.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/roasted-reds.jpg" alt="Roasted Red Potatoes" class="card-image">
+                                <p class="badge">Roasted Red Potatoes</p>
+                                <p class="gluten-free">Gluten-Free</p>
+                                <p class="card-description">Herb-roasted with a golden, crispy skin and tender inside.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/cilantrolimerice.jpg" alt="Cilantro Lime Rice" class="card-image">
+                                <p class="badge">Cilantro Lime Rice</p>
+                                <p class="gluten-free">Gluten-Free</p>
+                                <p class="card-description">Light and aromatic, this rice is tossed with fresh cilantro and a burst of lime.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/bakedbeans.jpg" alt="Baked Beans" class="card-image">
+                                <p class="badge">Baked Beans</p>
+                                <p class="gluten-free">Gluten-Free</p>
+                                <p class="card-description">Slow-cooked in a rich, savory sauce with a hint of sweetness.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/bakedpotato.jpg" alt="Baked Potato" class="card-image">
+                                <p class="badge">Baked Potato</p>
+                                <p class="gluten-free">Gluten-Free</p>
+                                <p class="card-description">Fluffy on the inside with a crisp, golden skin — perfect with butter, sour cream, or all the fixings.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/scallopedpotatoes.jpg" alt="Scalloped Potatoes" class="card-image">
+                                <p class="badge">Scalloped Potatoes</p>
+                                <p class="card-description">Thinly sliced potatoes baked in a creamy, cheesy sauce until golden and bubbling.</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/italianpastasalad.jpg" alt="Macaroni Salad" class="card-image">
+                                <p class="badge">Italian Pasta Salad</p>
+                                <p class="card-description">Rotini pasta with peppers, olives, and artichokes in a zesty Italian dressing.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/pennealfredo.jpg" alt="Penne Alfredo" class="card-image">
+                                <p class="badge">Penne Alfredo</p>
+                                <p class="card-description">Tender penne pasta tossed in a rich, velvety Alfredo sauce.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/potatosalad.jpg" alt="Potato Salad" class="card-image">
+                                <p class="badge">Potato Salad</p>
+                                <p class="gluten-free">Gluten-Free</p>
+                                <p class="card-description">A chilled, creamy blend of potatoes, herbs, and tangy dressing.</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/macaronisalad.jpg" alt="Macaroni Salad" class="card-image">
+                                <p class="badge">Macaroni Salad</p>
+                                <p class="card-description">Made with elbow macaroni, crisp vegetables, and a creamy, flavorful dressing.</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/greensalad.jpg" alt="Green Salad" class="card-image">
+                                <p class="badge">Green Salad</p>
+                                <p class="gluten-free">Gluten-Free</p>
+                                <p class="card-description">Mixed greens with cherry tomatoes.</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/caesarsalad.jpg" alt="Caesar Salad" class="card-image">
+                                <p class="badge">Caesar Salad</p>
+                                <p class="card-description">Romaine, croutons, and Caesar dressing.</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/coleslaw.jpg" alt="Coleslaw" class="card-image">
+                                <p class="badge">Coleslaw</p>
+                                <p class="card-description">Shredded cabbage and carrots in creamy dressing.</p>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide card-item">
+                            <a class="card-link">
+                                <img src="images/fruitsalad.jpg" alt="Fruit Salad" class="card-image">
+                                <p class="badge">Fruit Salad</p>
+                                <p class="gluten-free">Gluten-Free</p>
+                                <p class="card-description">Mixed seasonal fruits, served chilled.</p>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="swiper-buttons">
+                        <div class="swiper-button-prev">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+              </div>
+
+                <div class="break-line fade-in-section"></div>
+
+                <h2 class="menus-text-4 fade-in-section">Appetizers &amp Extras</h2>
+                
+                <div class="swiper appetizers-swiper fade-in-section">
+                    <div class="swiper-wrapper card-list">
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/cocktailmeatballs.jpg" alt="Cocktail Meatballs" class="card-image">
+                          <p class="badge">Cocktail Meatballs</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Bite-sized meatballs simmered in a sweet and tangy glaze.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/burntends.jpg" alt="Pork Burnt Ends" class="card-image">
+                          <p class="badge">Pork Burnt Ends</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Tender pork bites with a smoky, caramelized crust.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/coconutshrimp.jpg" alt="Coconut Shrimp" class="card-image">
+                          <p class="badge">Coconut Shrimp</p>
+                          <p class="card-description">Crispy shrimp coated in a coconut breading and fried golden.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/antipastoplatter.jpg" alt="Antipasto Platter" class="card-image">
+                          <p class="badge">Antipasto Platter</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">A variety of cured meats, cheeses, and marinated vegetables.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/friedpicklespears.jpg" alt="Fried Pickle Spears" class="card-image">
+                          <p class="badge">Fried Pickle Spears</p>
+                          <p class="card-description">Crispy, tangy pickles fried to golden perfection.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/potstickers.jpg" alt="Potstickers" class="card-image">
+                          <p class="badge">Potstickers</p>
+                          <p class="card-description">Tender dumplings filled with a savory blend of meat and vegetables.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/watermelonwedges.jpg" alt="Watermelon Wedges" class="card-image">
+                          <p class="badge">Watermelon Wedges</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Fresh-cut slices of juicy, chilled watermelon.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/grilledveggieskewers.jpg" alt="Grilled Vegetable Skewers" class="card-image">
+                          <p class="badge">Grilled Vegetable Skewers</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">A mix of seasonal vegetables grilled and lightly seasoned.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/meatandcheesetray.jpg" alt="Meat & Cheese Tray" class="card-image">
+                          <p class="badge">Meat &amp; Cheese Tray</p>
+                          <p class="card-description">Assorted deli meats and cheeses arranged for easy snacking.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/fruit-tray.jpg" alt="Fruit Platter" class="card-image">
+                          <p class="badge">Fruit Platter</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">A colorful selection of fresh-cut seasonal fruits.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/veg-tray.jpg" alt="Vegetable Tray" class="card-image">
+                          <p class="badge">Vegetable Tray</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Crisp raw veggies served with creamy ranch dip.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/cornonthecob.jpg" alt="Corn on the Cob" class="card-image">
+                          <p class="badge">Corn on the Cob</p>
+                          <p class="gluten-free">Gluten-Free</p>
+                          <p class="card-description">Sweet corn cooked and served on the cob, butter-ready.</p>
+                        </a>
+                      </div>
+                    </div>
+                  
+                    <div class="swiper-buttons">
+                        <div class="swiper-button-prev">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                    </div>
+                  
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                <div class="break-line fade-in-section"></div>
+
+                <h2 class="menus-text-5 fade-in-section">Drinks</h2>
+
+                <div class="swiper desserts-swiper fade-in-section">
+                    <div class="swiper-wrapper card-list">
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/water.jpg" alt="Water" class="card-image">
+                          <p class="badge">Water</p>
+                          <p class="card-description">Served ice-cold.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/lemonade.jpg" alt="Lemonade" class="card-image">
+                          <p class="badge">Lemonade</p>
+                          <p class="card-description">Cool, sweet, and lemony.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/iced-tea.jpg" alt="Iced Tea" class="card-image">
+                          <p class="badge">Iced Tea</p>
+                          <p class="card-description">Smooth, served chilled.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Punch</p>
+                          <p class="card-description">A classic and colorful blend of bold, fruit flavors.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Coffee</p>
+                          <p class="card-description">Warm, rich, and aromatic.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/soda.jpg" alt="Soda" class="card-image">
+                          <p class="badge">Soda</p>
+                          <p class="card-description">Chilled — Coca-Cola, Diet Coke, and Sprite available.</p>
+                        </a>
+                      </div>
+                    </div>
+                  
+                    <div class="swiper-buttons">
+                        <div class="swiper-button-prev">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                    </div>
+                  
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                <div class="break-line fade-in-section"></div>
+
+                <h2 class="menus-text-6 fade-in-section">Desserts</h2>
+
+                <div class="swiper desserts-swiper fade-in-section">
+                    <div class="swiper-wrapper card-list">
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Ice Cream Bars</p>
+                          <p class="card-description">A variety of ice cream bars with different flavors and coatings.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/assortedcookies.jpg" alt="Cookies" class="card-image">
+                          <p class="badge">Cookies</p>
+                          <p class="card-description">A delightful mix of soft cookies.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/brownies.jpg" alt="Brownies" class="card-image">
+                          <p class="badge">Brownies</p>
+                          <p class="card-description">Decadent chocolate brownies with a rich, chewy texture.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Cakes</p>
+                          <p class="card-description">A variety of delicious cakes in different flavors.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Pies</p>
+                          <p class="card-description">A selection of sweet pies in various flavors.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <p class="badge">Strawberry Shortcake</p>
+                          <p class="card-description">Light cake, strawberries, and whipped cream.</p>
+                        </a>
+                      </div>
+                  
+                      <div class="swiper-slide card-item">
+                        <a class="card-link">
+                          <img src="images/cobbler-icecream.jpg" alt="Cobbler & Ice Cream" class="card-image">
+                          <p class="badge">Cobbler &amp; Ice Cream</p>
+                          <p class="card-description">Warm fruit cobbler topped with creamy ice cream.</p>
+                        </a>
+                      </div>
+                    </div>
+                  
+                    <div class="swiper-buttons">
+                        <div class="swiper-button-prev">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                          <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                    </div>
+                  
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                <div class="break-line fade-in-section"></div>
+
+            </div>
+
+            <div class="inquiry-wrapper fade-in-section">
+                <p class="menu-inquiry-text">
+                    Interested in learning more about our menu options, customizations, or pricing details? We’re happy to provide additional information and help you create the perfect menu for your event.
+                </p>
+
+                <a href="contact.html" class="inquiry-button">
+                    <span class="button-text">Inquire</span>
+                    <i class="fa-solid fa-chevron-right fa-xs arrow"></i>
+                  </a>
+            </div>
+
+        </section>
     </main>
+    </div>
 
     <footer>
         <div class="footer-container">
     
             <div class="footer-social">
                 <a href="https://www.facebook.com/McKillipsCatering" target="_blank">
-                    <i class="fa-brands fa-facebook fa-2xl" style="color: white;" alt="Facebook"></i>
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
                 </a>
                 <a href="https://www.instagram.com/mckillipscatering" target="_blank">
-                    <i class="fa-brands fa-instagram fa-2xl" style="color: white;" alt="Instagram"></i>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
                 </a>
             </div>
     
             <p class="footer-copy">© 2024 McKillips Catering. All rights reserved.</p>
         </div>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
+
+    <div id="lightbox" class="lightbox hidden">
+        <span class="lightbox-close">
+            <span class="x-bar bar-1"></span>
+            <span class="x-bar bar-2"></span>
+        </span>
+        <img class="lightbox-img" alt="Expanded image">
+    </div>
+    
 </body>
 </html>

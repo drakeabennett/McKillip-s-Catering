@@ -2,24 +2,177 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
     <title>McKillips Catering</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/images/star.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-
+    <div class="blur-overlay" id="blur-overlay"></div>
     <header>
-        
+        <nav class="navbar">
+            <div class="navbar-container"> 
+                <a href="/home.html" id="navbar-logo">
+                    <img src="images/mckillips-catering-logo.png" alt="McKillip's Catering Company Logo">
+                </a>
+                <div class="navbar-toggle" id="mobile-menu">
+                    <span class="navbar-bar"></span>
+                    <span class="navbar-bar"></span>
+                    <span class="navbar-bar"></span>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="/home.html" class="navbar-link" id="home-page">
+                            <i class="fa-solid fa-house fa-sm"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/menus.html" class="navbar-link" id="menus-page">
+                            <i class="fa-solid fa-list-ul fa-sm"></i>
+                            Menus
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/rentals.html" class="navbar-link" id="rentals-page">
+                            <i class="fa-solid fa-truck-ramp-box fa-sm"></i>
+                            Rentals
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/about.html" class="navbar-link" id="about-page">
+                            <i class="fa-solid fa-info-circle fa-sm"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/contact.html" class="navbar-link" id="contact-page">
+                            <i class="fa-solid fa-address-card fa-sm"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
+    <div class="main-content">
     <main>
-        
+        <h1 class="rentals-phrase fade-in-section">Elevate Your Event.</h1>
+
+        <h2 class="rentals-text-1 fade-in-section">McKillips Catering helps with the essentials you need for a seamless and memorable experience.</h2>
+
+        <div class="break-line fade-in-section"></div>
+
+        <div class="slider-wrapper">
+        <div class="swiper rentals-swiper fade-in-section"> 
+            <div class="swiper-wrapper card-list">
+                <div class="swiper-slide card-item">
+                    <a class="card-link">
+                        <h2 class="card-rental-badge">Tents</h2>
+                        <p class="rentals-description">A variety of tents in different sizes, perfect for any outdoor event. Whether you’re hosting a small gathering or a large celebration, we can provide the right size to ensure your guests are comfortable and protected from the elements.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide card-item">
+                    <a class="card-link">
+                        <h2 class="card-rental-badge">Tables</h2>
+                        <p class="rentals-description">A wide variety of table options, including round, banquet, cocktail, umbrella tables, and more, ensuring the perfect fit for any event or setup.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide card-item">
+                    <a class="card-link">
+                        <h2 class="card-rental-badge">Chairs</h2>
+                        <p class="rentals-description">Choose from a variety of seating options including folding chairs, bistro chairs, padded wood folding, black padded, bar stools, and more — perfect for events of any style or size.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide card-item">
+                    <a class="card-link">
+                        <h2 class="card-rental-badge">Linens</h2>
+                        <p class="rentals-description">Elegant linens to suit any table setup, adding a clean and polished look to your event decor.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide card-item">
+                    <a class="card-link">
+                        <h2 class="card-rental-badge">Ceramic Dishware</h2>
+                        <p class="rentals-description">Fine ceramic dishware that brings sophistication to any table setting, combining style with durability for your event’s dining experience.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide card-item">
+                    <a class="card-link">
+                        <h2 class="card-rental-badge">Stainless Steel Utensils</h2>
+                        <p class="rentals-description">Stainless steel utensils, designed for both elegance and practicality, ensuring a refined dining experience for your guests.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide card-item">
+                    <a class="card-link">
+                        <h2 class="card-rental-badge">Glassware</h2>
+                        <p class="rentals-description">Perfect for serving drinks and elevating the aesthetic of your event, from casual to formal occasions.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide card-item">
+                    <a class="card-link">
+                        <h2 class="card-rental-badge">Dance Floor</h2>
+                        <p class="rentals-description">Set the stage for fun with a dance floor your guests will love.</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide card-item">
+                    <a class="card-link">
+                        <h2 class="card-rental-badge">DJ &amp Host w/ Games</h2>
+                        <p class="rentals-description">Engage and entertain your guests with a professional DJ and host, offering interactive games to ensure a lively and memorable event.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-buttons">
+                <div class="swiper-button-prev">
+                  <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg width="6" height="6" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+            </div>
+          
+            <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+
     </main>
+    </div>
 
     <footer>
-        
+        <div class="footer-container">
+    
+            <div class="footer-social">
+                <a href="https://www.facebook.com/McKillipsCatering" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                </a>
+                <a href="https://www.instagram.com/mckillipscatering" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+            </div>
+    
+            <p class="footer-copy">© 2024 McKillips Catering. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

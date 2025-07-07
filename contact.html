@@ -2,24 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
     <title>McKillips Catering</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/images/star.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-
+    <div class="blur-overlay" id="blur-overlay"></div>
     <header>
-        <!-- Your navigation bar can go here -->
+        <nav class="navbar">
+            <div class="navbar-container"> 
+                <a href="/home.html" id="navbar-logo">
+                    <img src="images/mckillips-catering-logo.png" alt="McKillip's Catering Company Logo">
+                </a>
+                <div class="navbar-toggle" id="mobile-menu">
+                    <span class="navbar-bar"></span>
+                    <span class="navbar-bar"></span>
+                    <span class="navbar-bar"></span>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="/home.html" class="navbar-link" id="home-page">
+                            <i class="fa-solid fa-house fa-sm"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/menus.html" class="navbar-link" id="menus-page">
+                            <i class="fa-solid fa-list-ul fa-sm"></i>
+                            Menus
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/rentals.html" class="navbar-link" id="rentals-page">
+                            <i class="fa-solid fa-truck-ramp-box fa-sm"></i>
+                            Rentals
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/about.html" class="navbar-link" id="about-page">
+                            <i class="fa-solid fa-info-circle fa-sm"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/contact.html" class="navbar-link" id="contact-page">
+                            <i class="fa-solid fa-address-card fa-sm"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
+    <div class="main-content fade-in-section">
     <main>
-        <!-- Main content of your page goes here -->
+        <h1 class="contact-phrase fade-in-section">Get in Touch.</h1>
+        <h2 class="contact-text-1 fade-in-section">Include the date, location, group size, event type, and any other details. We respond to all inquiries—check your spam folder if you don’t hear from us.</h2>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" class="contact-left" method="post">
+                <input type="hidden" name="access_key" value="e66ab663-1cd8-47b1-b50c-6445dd9f0e1f">
+                <input type="text" name="name" placeholder="Name" class="contact-input fade-in-section" required>
+                <input type="text" name="replyto" placeholder="Email" class="contact-input fade-in-section" required>
+                <input type="text" name="event" placeholder="Event" class="contact-input fade-in-section" required>
+                <input type="number" name="size" id="contact-size" class="contact-input fade-in-section" placeholder="Size" min="1" max="9999" step="1" inputmode="numeric" aria-label="Group Size" autocomplete="off" required/>
+
+                <div class="contact-input fade-in-section">
+                  <div id="menuList" class="dropdown-menu-list" tabindex="100">
+                      <span class="list-anchor">Select Items</span>
+                      <ul class="items">
+                          <li><label><input type="checkbox" name="Item" value="Apple"> Apple</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Orange"> Orange</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Grapes"> Grapes</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Berry"> Berry</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Mango"> Mango</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Banana"> Banana</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Tomato"> Tomato</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Apple"> Apple</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Orange"> Orange</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Grapes"> Grapes</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Berry"> Berry</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Mango"> Mango</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Banana"> Banana</label></li>
+                          <li><label><input type="checkbox" name="Item" value="Tomato"> Tomato</label></li>
+                      </ul>
+                  </div>
+                </div>
+
+                <textarea type="text" name="message" placeholder="Message" class="contact-input fade-in-section" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit" class="button fade-in-section" id="contact-button">Submit</button>
+            </form>
+
+            <div class="contact-right">
+                <div class="contact-info">
+                  
+                  <div class="contact-row fade-in-section">
+                    <p class="label">Business</p>
+                    <p class="value">McKillip's Catering Inc.</p>
+                  </div>
+              
+                  <div class="contact-row fade-in-section">
+                    <p class="label">Address</p>
+                    <p class="value">P.O. Box 26<br>Saint Paul, Oregon<br>97137</p>
+                  </div>
+              
+                  <div class="contact-row fade-in-section">
+                    <p class="label">Office</p>
+                    <p class="value">(503) 633-2991</p>
+                  </div>
+              
+                  <div class="contact-row fade-in-section">
+                    <p class="label">Mobile</p>
+                    <p class="value">(503) 910-3135</p>
+                  </div>
+                </div>
+
+                <div class="contact-map fade-in-section">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.521925942776!2d-123.0035487236732!3d45.217008871070995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f175!3m3!1m2!1s0x5495447f5e3f1cb1%3A0x76063bdb9bba492e!2sMcKillip&#39;s%20Catering%20Inc.!5e0!3m2!1sen!2sus!4v1746078306384!5m2!1sen!2sus" 
+                        width="600"
+                        height="250" 
+                        style="border:0; border-radius: 10px;"  
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+              </div>
+        </div>
     </main>
+    </div>
 
     <footer>
-        <!-- Footer content goes here -->
+        <div class="footer-container">
+    
+            <div class="footer-social">
+                <a href="https://www.facebook.com/McKillipsCatering" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                </a>
+                <a href="https://www.instagram.com/mckillipscatering" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+            </div>
+    
+            <p class="footer-copy">© 2024 McKillips Catering. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="app.js"></script>
 </body>
+
 </html>
